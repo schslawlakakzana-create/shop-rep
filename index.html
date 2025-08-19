@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Shop Name] - Follow Us!</title>
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Reset and body styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url('qala.png'); /* CHANGE THIS: Your glitter image file */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: 'Arial', sans-serif;
+      height: 100vh;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Overlay for better readability */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3); /* CHANGE OPACITY if needed */
+      z-index: 1;
+    }
+
+    /* Main content */
+    .container {
+      position: relative;
+      z-index: 2;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+
+    /* Buttons */
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 25px;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    /* Social media specific colors */
+    .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+    .facebook { background-color: #1877f2; }
+    .tiktok { background-color: #010101; }
+
+    .buttons a i {
+      margin-right: 8px; /* spacing between icon and text */
+    }
+
+    .buttons a:hover {
+      transform: scale(1.1);
+      opacity: 0.85;
+    }
+
+    /* Responsive design */
+    @media (max-width: 600px) {
+      h1 { font-size: 2em; }
+      p { font-size: 1em; }
+      .buttons a {
+        padding: 12px 20px;
+        margin: 8px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>Welcome to kutally zand</h1> <!-- CHANGE THIS: Shop name -->
+    <p>Follow us on social media!</p>
+    <div class="buttons">
+      <a href="https://instagram.com" target="_blank" class="instagram">
+        <i class="fab fa-instagram"></i> Instagram <!-- CHANGE THIS: Instagram link -->
+      </a>
+      <a href="https://facebook.com" target="_blank" class="facebook">
+        <i class="fab fa-facebook-f"></i> Facebook <!-- CHANGE THIS: Facebook link -->
+      </a>
+      <a href="https://tiktok.com" target="_blank" class="tiktok">
+        <i class="fab fa-tiktok"></i> TikTok <!-- CHANGE THIS: TikTok link -->
+      </a>
+    </div>
+  </div>
+</body>
+</html>
